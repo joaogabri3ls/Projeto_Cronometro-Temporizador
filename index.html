@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="menu" id="cronometro"><span class="material-symbols-outlined">
+                timer
+                </span>Cronômetro</button>
+            <button class="menu" id="temporizador"><span class="material-symbols-outlined">
+                hourglass_empty
+                </span>Temporizador</button>
+        </div>
+
+        <div class="cronometro">
+            <div class="relogio">
+                <div class="tempo" id="horas">00</div>
+                <div class="separar">:</div>
+                <div class="tempo" id="minutos">00</div>
+                <div class="separar">:</div>
+                <div class="tempo" id="segundos">00</div>
+            </div>
+            <div class="botoes">
+                <button class="btn" id="inicio">Iniciar</button>
+                <button class="btn" id="pausa">Pausar</button>
+                <button class="btn" id="continua">Continuar</button>
+                <button class="btn" id="resetar">Resetar</button>
+            </div>
+        </div>
+
+        <div class="temporizador">
+            <span id="setaCima">
+                <button id="maisHoras"><span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                    </span></button>
+                <button id="maisMinutos"><span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                    </span></button>
+                <button id="maisSegundos"><span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                    </span></button>
+            </span>
+                <div class="relogio">
+            <div class="tempo" id="horasT">00</div>
+            <div class="separar">:</div>
+            <div class="tempo" id="minutosT">00</div>
+            <div class="separar">:</div>
+            <div class="tempo" id="segundosT">00</div>
+                </div>
+                <span id="setaBaixo">
+            <button id="-horas"><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></button>
+            <button id="-minutos"><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></button>
+            <button id="-segundos"><span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></button>
+                </span>
+                <div class="botoes">
+                    <button class="btn" id="inicioTemp">Iniciar</button>
+                    <button class="btn" id="pausaTemp">Pausar</button>
+                    <button class="btn" id="continuaTemp">Continuar</button>
+                    <button class="btn" id="resetarTemp">Resetar</button>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
